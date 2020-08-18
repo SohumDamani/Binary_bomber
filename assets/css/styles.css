@@ -2,7 +2,7 @@
 .about-me {
   text-align: center;
 }
-.withbg{
+.backgroung{
   background-image: url(../images/logo.jpg);
   background-size: cover;
 }
