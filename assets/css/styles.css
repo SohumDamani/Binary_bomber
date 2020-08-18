@@ -3,6 +3,6 @@
   text-align: center;
 }
 .withbg{
-  background-image: url(assests/images/logo.jpg);
+  background-image: url(../images/logo.jpg);
   background-size: cover;
 }
