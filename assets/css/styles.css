@@ -6,6 +6,11 @@
   background-image: url(../images/logo.jpg);
   background-size: cover;
 }
-#heading{
+.heading{
   font-family: 'Sofia';font-size: 25px;
 }
+.resize{
+    width: 300px;
+}
+
+
