@@ -19,4 +19,8 @@
     width: 850px !important;
 }
 
+.carousel-item {
+ height: 500px;
+    text-align: center;
+}
 
