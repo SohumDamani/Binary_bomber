@@ -11,7 +11,8 @@
   
 }
 .resize{
-    width: 700px;
+    height: 450px !important;
+    width: 850px !important;
 }
 
 
