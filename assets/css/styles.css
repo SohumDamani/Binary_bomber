@@ -3,10 +3,6 @@
   text-align: center;
 }
 .backgroung{
-  background-image: url(../images/pulses.jpg);
-  background-size: cover;
-}
-.backgroung1{
   background-image: url(../images/truck.jpg);
   background-size: cover;
 }
