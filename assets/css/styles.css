@@ -2,7 +2,7 @@
 .about-me {
   text-align: center;
 }
-.
+
 .change {
   background-image: url("../images/truck.jpg");
   background-size: cover;
@@ -10,9 +10,6 @@
 .heading{
   font-family: 'Do Hyeon', sans-serif;
   
-}
-.resize{
-    width= 700px;
 }
 
 .item img {
