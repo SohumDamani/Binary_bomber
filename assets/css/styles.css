@@ -29,3 +29,7 @@
     object-fit: cover;
 }
 
+.resize-img {
+    height:250px;
+    width:100%;
+}
