@@ -17,6 +17,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.left_gap{
+  padding-left: 10px;
+}
 .heading{
   font-family: 'Do Hyeon', sans-serif;
   
