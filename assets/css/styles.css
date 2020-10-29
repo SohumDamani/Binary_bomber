@@ -1,7 +1,10 @@
 .spacing{
   padding-top:50px
 }
-
+.reduce_spacing{
+  padding-top:1px
+  padding-bottom:1px
+}
 .bg { 
   /* The image used */
   background-image: url("assets/images/Background.jpg");
