@@ -2,10 +2,6 @@
   padding-top:50px
 }
 
-.change {
-  background-image: url("../images/background.jpg");
-  background-size: 1600px 426px;
-}
 .bg { 
   /* The image used */
   background-image: url("assets/images/Background.jpg");
