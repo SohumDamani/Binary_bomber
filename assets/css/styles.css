@@ -8,6 +8,8 @@
 .bg { 
   /* The image used */
   background-image: url("paper.gif");
+  background-color: #cccccc;
+  background-repeat: repeat;
 
   /* Full height */
   height: 100%; 
