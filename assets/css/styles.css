@@ -21,6 +21,9 @@
 .left_gap{
   padding-left: 10px;
 }
+.navbar-nav { 
+   margin-left: auto; 
+} 
 .heading{
   font-family: 'Do Hyeon', sans-serif;
   
