@@ -7,9 +7,9 @@
 }
 .bg { 
   /* The image used */
-  background-image: url("paper.gif");
-  background-color: lightsteelblue;
-  background-repeat: repeat;
+  background-image: url("assets/images/background.jpg");
+  /*background-color: lightsteelblue;
+  background-repeat: repeat;*/
 
   /* Full height */
   height: 100%; 
