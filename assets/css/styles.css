@@ -8,7 +8,7 @@
 .bg { 
   /* The image used */
   background-image: url("paper.gif");
-  background-color: aquamarine;
+  background-color: lightsteelblue;
   background-repeat: repeat;
 
   /* Full height */
@@ -16,7 +16,6 @@
 
   /* Center and scale the image nicely */
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 .left_gap{
