@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Farmers Sales and Demand</title>
-  <link rel="shortcut icon" type="image/jpg" href="assets/images/logo1.jpg">
+  <link rel="shortcut icon" type="image/jpg" href="">
   <meta name="description" content="">
   <meta name="viewport"content="width=device-width">
 
   <!-- Bootstrap -->
   <!-- CSS only -->
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <link rel="stylesheet " href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous ">
 
   <!-- && -->
 
@@ -33,11 +33,149 @@
   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
   <!-- font awesome-->
 <script src="https://use.fontawesome.com/48e5752e0a.js"></script>
-<body>
-      
+<style>
+  body{
+    background: url('assets/images/background1.jpg')repeat center center fixed;
+  }
+</style>  
 
+<body> 
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark container-fluid "  style="color:white;width:100%;margin-top:0px;background-color:rgba(0,139,139,0.91);">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation ">
+            <span class="navbar-toggler-icon navbar-toggler-right"></span>
+          </button>
 
-      
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" style="color:white;" href="#" > <?php echo $_SESSION["name"]; ?> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" style="color:white" aria-expanded="false">More</a>
+                <div class="dropdown-menu" style="color:darkslategrey" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">My Account</a>
+                  <a class="dropdown-item" href="/index.php">Logout</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+  </nav>
+
+  <section class="text-center d-none d-sm-block" style = ""> 
+    <div class="img-with-text profile_image " style="">
+      <img src="assets/images/bg3.jpg" class="rounded-circle img-fluid desktop_profile" alt="Cinque Terre">
+      <div style="padding-left:41.5%;padding-top:12px;">
+        <span class="badge badge-pill badge-warning caption"> User name </span>  
+      </div>  
+    </div>
+    <div class="btn-group dropdown" >
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Personel Info
+      </button>
+      <div class="dropdown-menu px-0 py-0" style="width:110%">
+        <div class="form-group">
+          <label for="usr">First Name:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+          <label for="usr"> Last Name:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control form-control-sm" id="pwd">
+          <label for="email">Enter your email:</label>
+          <input type="email"  class="form-control form-control-sm" id="email">
+        </div>  
+      </div> 
+    </div>  
+    <div class="btn-group dropdown" >
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Professional Detail
+      </button>
+      <div class="dropdown-menu px-0 py-0" style="width:110%">
+        <div class="form-group">
+          <label for="usr">Branch:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+          <label for="usr"> Position:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+          <label for="usr"> Projects:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+        </div> 
+    </div> 
+    </div>
+    <div class="btn-group dropdown" >
+      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Settings
+      </button> 
+      <div class="dropdown-menu px-0 py-0" style="width:110%">
+        <div class="form-group">
+          <label for="pwd">Change Password:</label>
+          <input type="password" class="form-control form-control-sm" id="pwd">
+          <label for="usr">Change User Name:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+          <!--https://stackoverflow.com/questions/13350781/how-to-allow-users-to-add-image-for-their-profile
+              please go through this and add option for the profile picture change -->
+        </div>
+      </div> 
+    </div> 
+  </section>
+
+  <section class=" d-block d-sm-none">
+    <div class="img-with-text profile_image " >
+      <img src="assets/images/bg3.jpg" class="rounded-circle img-fluid" alt="Cinque Terre" style = "height:100px; width:100px;">
+      <div style="padding-top:12px">
+        <span class="badge badge-pill badge-warning caption"> User name </span>  
+      </div>  
+    </div>
+    <div>
+      <div class="btn-group dropright" >
+        <button type="button" class="btn dropright-toggle" data-toggle="dropright" aria-haspopup="true" aria-expanded="false">
+          Personel Info
+        </button>
+        <div class="dropright-menu px-0 py-0" style="width:85%">
+          <div class="form-group">
+            <label for="usr">First Name:</label>
+            <input type="text" class="form-control form-control-sm" id="usr">
+            <label for="usr"> Last Name:</label>
+            <input type="text" class="form-control form-control-sm" id="usr">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control form-control-sm" id="pwd">
+            <label for="email">Enter your email:</label>
+            <input type="email"  class="form-control form-control-sm" id="email">
+          </div>  
+        </div> 
+      </div> 
+    </div>  
+    <div> 
+      <div class="btn-group dropright" >
+        <button type="button" class="btn dropright-toggle" data-toggle="dropright" aria-haspopup="true" aria-expanded="false">
+          Professional Detail
+        </button>
+        <div class="dropright-menu px-0 py-0" style="width:85%">
+          <div class="form-group">
+            <label for="usr">Branch:</label>
+            <input type="text" class="form-control form-control-sm" id="usr">
+            <label for="usr"> Position:</label>
+            <input type="text" class="form-control form-control-sm" id="usr">
+            <label for="usr"> Projects:</label>
+            <input type="text" class="form-control form-control-sm" id="usr">
+          </div> 
+      </div> 
+      </div>
+      </div>
+    <div class="btn-group dropright" >
+      <button type="button" class="btn dropright-toggle" data-toggle="dropright" aria-haspopup="true" aria-expanded="false">
+        Settings
+      </button> 
+      <div class="dropright-menu px-0 py-0" style="width:85%">
+        <div class="form-group">
+          <label for="pwd">Change Password:</label>
+          <input type="password" class="form-control form-control-sm" id="pwd">
+          <label for="usr">Change User Name:</label>
+          <input type="text" class="form-control form-control-sm" id="usr">
+          <!--https://stackoverflow.com/questions/13350781/how-to-allow-users-to-add-image-for-their-profile
+              please go through this and add option for the profile picture change -->
+        </div>
+      </div> 
+    </div> 
+  </section>  
 </body>
 
 </html>
